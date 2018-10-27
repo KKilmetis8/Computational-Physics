@@ -1,7 +1,6 @@
      #include <stdio.h>
     #include <stdlib.h>
     #include <math.h>
-    #include <time.h>
      
     int main (void)
     {
@@ -10,7 +9,7 @@
     scanf("%d",&N);
     scanf("%d",&seed);
     srand(seed);
-    ran=rand() % 1;
+    ran=(double)(rand()/(double)(RAND_MAX)) ;
 	printf("%lf", ran);
    
     for(i=0;i<N;i++)
@@ -19,11 +18,12 @@
     fx = exp(x);
     sum= sum+fx;
     sum2= sum2+fx*fx;
-    ran=x;
+    ran=(double)(rand()/(double)(RAND_MAX));;
     }
+	    
     sum=sum/N;
     sum2=sum2/N;
-    printf("sum %lf sum2 %lf",sum,sum2);
+    
     
     double esum, integ, einteg ;
     esum=0.0;
