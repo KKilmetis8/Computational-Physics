@@ -1,4 +1,4 @@
-#include <stdio.h>
+nclude <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
@@ -6,7 +6,7 @@
 int main ()
 {
 	double r=3.0, density=0.0, ran=0.0, mass=0.0 ;
-	double dist=3.0,seed=0.0, sum=0.0, sum2=0.0, x=0.0, y=0.0;
+	double dist=36.0,seed=0.0, sum=0.0, sum2=0.0, x=0.0, y=0.0;
 	double comx=0.0, comy=0.0, sumx=0.0, sumy=0.0, ersumx=0.0, ersumy=0.0, erx=0.0, ery=0.0;
 	int i, Ntoy, hit=0;
 
@@ -52,12 +52,12 @@ emass=esum*dist;
 
 comx=dist*sumx/(Ntoy*mass);
 comy=dist*sumy/(Ntoy*mass);
-erx=dist* sqrt((ersumx/Ntoy - (sumx/Ntoy * sumx/Ntoy)/ Ntoy))/mass;
-ery=dist* sqrt((ersumy/Ntoy - (sumy/Ntoy * sumy/Ntoy)/ Ntoy))/mass;
+erx=dist* sqrt(((ersumx/Ntoy - (sumx/Ntoy * sumx/Ntoy))/ Ntoy))/mass;
+ery=dist* sqrt(((ersumy/Ntoy - (sumy/Ntoy * sumy/Ntoy))/ Ntoy))/mass;
 
 printf(" Mass= %lf +- %lf \n",mass,emass);
 printf(" Xcenter= %lf +- %lf \n",comx,erx);
 printf(" Ycenter= %lf +- %lf \n",comy,ery); 
 return 0;
 }
-				
+							
