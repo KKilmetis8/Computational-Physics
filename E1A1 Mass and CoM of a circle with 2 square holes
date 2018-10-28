@@ -6,7 +6,7 @@
 int main ()
 {
 	double r=3.0, density=0.0, ran=0.0, mass=0.0 ;
-	double dist=6.0,seed=0.0, sum=0.0, sum2=0.0, x=0.0, y=0.0;
+	double dist=3.0,seed=0.0, sum=0.0, sum2=0.0, x=0.0, y=0.0;
 	double comx=0.0, comy=0.0, sumx=0.0, sumy=0.0, ersumx=0.0, ersumy=0.0, erx=0.0, ery=0.0;
 	int i, Ntoy, hit=0;
 
