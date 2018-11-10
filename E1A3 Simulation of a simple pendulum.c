@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
-#include <stdbool.h>
 
 //We're making a Gaussian distribution around the theoretical value of the Period using the Box-Muller Transformation
 double Gaussian(double m, double s)	
