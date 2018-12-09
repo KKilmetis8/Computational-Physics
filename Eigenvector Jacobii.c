@@ -15,7 +15,7 @@ double pinakas[3][3],max=0.0, pinakas_s1[3][3],sum=0.0,alpha=0.0,beta=0.0;
 int i,j,r=12,q=12,counter=0;
 
 pinakas[0][0]=2.0;  pinakas[0][1]=-1.0; pinakas[0][2]=10.0; pinakas[0][3]=0.0; //pinakas[0][4]=-11.0; 
-pinakas[1][0]=0.0;  pinakas[1][1]=-3.0; pinakas[1][2]=-1.0; pinakas[1][3]=8.0; //pinakas[1][4]=-11.0; 
+pinakas[1][0]=0.0;  pinakas[1][1]=-3.0; pinakas[1][2]=-1.0; pinakas[1][3]=8.0; //pinakas[1][4]=11.0; 
 pinakas[2][0]=10.0; pinakas[2][1]=-1.0; pinakas[2][2]=2.0;  pinakas[2][3]=0.0; //pinakas[2][4]=6.0; 
 pinakas[3][0]=-1.0; pinakas[3][1]=11.0; pinakas[3][2]=-1.0; pinakas[3][3]=3.0; //pinakas[3][4]=25.0; 
 do{
