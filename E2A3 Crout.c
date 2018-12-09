@@ -55,7 +55,7 @@ for(k=0;k<n;k++)
     }
 }
 
-printf("The solution is :\n");
+printf("The solution is:\n");
 for(i=0;i<n;i++)
 {
     printf("x[%d] = %f \n",i,x[i]);
