@@ -7,7 +7,7 @@ int main()
     float x[10],a[10][10],b[10][10],u[10][10],c[10];
     printf("\n Enter the value of n: ");
     scanf("%d",&n);
-    printf("\n Enter the right hand side constants :\n");
+    printf("\n Enter the right hand side constants  :\n");
     for(i=0;i<n;i++)
     {
         scanf("%f",&a[i][n]);
