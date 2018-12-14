@@ -74,5 +74,5 @@ return 0;
 }
 
 //Very small theta means Newton's whole stich fucking sucks.
-//Exactly like the second half of his life. Smart guy tho.
+//Exactly like the second half of his life.  Smart guy tho.
 //Don't leave that it in.
