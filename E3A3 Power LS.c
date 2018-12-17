@@ -5,9 +5,6 @@
 int main (){
 double x[7]={1,2,2.5,4,6,8,8.5}, y[7]={0.4,0.7,0.8,1.0,1.2,1.3,1.4};
 int i,j;
-//We'll solve the system
-//[Sum y  Sum xy    ][a]=[ Sum ylny ] 
-//[Sum xy Sum y x^2 ][b]=[ Sum xylny ]
 double sumlnylnx=0.0, sumlnx=0.0,sumlny=0.0, sumlnx2=0.0;
 for(i=0;i<7;i++)
 	{
