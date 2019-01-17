@@ -20,26 +20,29 @@ for(i=0;i<N;i++){
 	t[i+1]=h+t[i];
 	uy[i+1]=uy[i]-(h*g);
 	y[i+1]=y[i]+h*(-g*t[i]+uy0);
-	fprintf(fp,"\n %lf \t %lf \t %lf",uy[i+1],y[i+1],t[i+1]);
+	fprintf(fp,"\n %lf \t %lf \t %lf",t[i+1],y[i+1],uy[i+1]);
+	if (y[i+1]<=0.0)
+		break;
 }
 fclose(fp);
 //4th Order Runge-Kutta
 FILE *fp1;
 fp1=fopen("Runge-Kutta 4 Results.txt","w");
-double k1[N],k2[N],k3[N],k4[N],uy4[N],y4[N];
+int N2=200;
+double k1[N2],k2[N2],k3[N2],k4[N2],uy4[N2],y4[N2];
 
 uy4[0]=uy0;
 y4[0]=0;
-for(i=0;i<N;i++){
+for(i=0;i<N2;i++){
 	k1[i]=h*uy4[0];
 	k2[i]=h*(uy4[i]-0.5*g*h);
 	k3[i]=h*(uy4[i]-0.5*g*h);
 	k4[i]=h*(uy4[i]-g*h);
 	y4[i+1]=y4[i]+(k1[i]+2.0*k2[i]+2.0*k3[i]+k4[i])/6;
 	uy4[i+1]=uy4[i]-g*h;
-	printf("\n %lf \t %lf \t %lf",uy4[i+1],y4[i+1],t[i+1]);
-	fprintf(fp1,"\n %lf \t %lf \t %lf",uy4[i+1],y4[i+1],t[i+1]);
-}
-//Kane diafores kai dose ligo megalytero N sth RK4, kapou sto 150/200 should do it
+	fprintf(fp1,"\n %lf \t %lf \t %lf",t[i+1],y4[i+1],uy4[i+1]);
+	if (y4[i+1]<=0.0)
+		break;
+	}
 return 0;
 }
